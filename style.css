@@ -1,0 +1,74 @@
+.menu li a{
+     text-decoration: none;
+     display: block;
+     margin-left: 20px;
+      color: white;
+
+}
+.menu{
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #267365;
+    border-radius: 5px;
+
+
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius:10px;
+    background-color: #F2CB05;
+    margin-left: 10px;
+}
+ h1{
+    margin-top: 2em;
+    text-align: center;
+}
+           /* -------------------parete responsavel pelos boões laterais--------------- */
+.bloco01{
+    background-color: #F28705;
+    border-radius: 10px;
+    width: 20em;
+    height: 25em;
+    text-align: center;
+}
+.bloco02{
+    background-color:#F2CB05;
+    border-radius: 10px;
+    width: 20em;
+    height:15em ;
+    text-align: center;
+}
+.bloco03{
+    background-color:#F23030;
+    border-radius: 10px;
+    width: 20em;
+    height:15em ;
+    text-align: center;
+}
+                             /* -------------------parete responsavel pelos slotes--------------- */
+.container{
+     display: flex; 
+
+
+
+}
+/* esta parte ainda precisa ser ajustada porque o slote perdeu o tamanho original pra poder se ajustar na pagina */
+
+
+.slote{
+    background-color: #267365;
+    border-radius: 15px;
+    width: 150px;
+    height: 80px;
+    margin: 1px;                   /* --------->>>> este comando serviu pra separar os slotes */
+    margin-left: 15em;
+    margin-top: -52em;
+}
