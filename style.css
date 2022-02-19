@@ -1,6 +1,6 @@
 .menu li a{
      text-decoration: none;
-     display: block;
+     /* display: block; */
      margin-left: 20px;
       color: white;
 
@@ -8,10 +8,10 @@
 .menu{
     list-style: none;
     display: flex;
-    margin-right: 50px;
+    /* margin-right: 0px; */
 
 }
-header{
+ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -19,7 +19,7 @@ header{
     border-radius: 5px;
 
 
-}
+} 
 .logo{
     height: 50px;
     width: 50px;
@@ -27,49 +27,49 @@ header{
     background-color: #F2CB05;
     margin-left: 10px;
 }
- h1{
-    /* margin-top: 300px; */
+  h1{
+ 
     transform: translateY(35px);
     text-align: center;
-}
+} 
            /* -------------------parete responsavel pelos boões laterais--------------- */
-.bloco01{
+ .bloco01{
     background-color: #F28705;
     border-radius: 10px;
-    width: 24em;
+    width: 22em;
     height: 25em;
-    text-align: center;
-    transform: translate(2em,5em);
+    text-align: center; 
+    transform: translate(1em,5em);
+    
 }
 .bloco02{
     background-color:#F2CB05;
     border-radius: 10px;
-    width: 24em;
+    width: 22em;
     height:15em ;
     text-align: center;
-    transform: translate(2em,85px);
+    transform: translate(1em,85px);
+    
 }
 .bloco03{
     background-color:#F23030;
     border-radius: 10px;
-    width: 24em;
+    width: 22em;
     height:15em ;
     text-align: center;
-    transform: translate(2em,90px);
-}
+    transform: translate(1em,90px);
+   
+} 
 
- /* -------------------parete responsavel pelos slotes--------------- */
+ /* -------------------parete responsavel pelos slotes de imagens--------------- */
 
-.container{
-    display: flex;
-    transform: translate(23em,2em);
-}
+ .row{
 
-.slote{
-    background-color: #267365;
-    border-radius: 15px;
-    width: 250px;
-    height: 160px;
-    margin-left: 15px;
-    margin-top: -52em;
-}
+     display: flex; 
+    transform: translate(27em,-51em); 
+    /* background-color: #267365; */
+    padding: 2px;
+    width: 800px;
+} 
+
+
