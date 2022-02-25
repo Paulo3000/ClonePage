@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br" onclick ="pular() ">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+
+    
+    <style>
+      *{
+        margin:0;
+        padding: 0;
+      }
+      #game{
+        width: 500px;
+        height: 200px;
+        border: 1px solid black;
+      }
+        /* ---------------------------------------------------- criando o personagen */
+         #perso{
+            width: 50px;
+            height: 50px;
+            /*border-radius: 2px;*/
+            /* background-color: rgb(46, 184, 11); */
+            position: relative; 
+            top: 100px;
+           
+            
+          }
+          /* .animar{
+            animation: perso 500ms infinite;
+          }
+          @keyframes perso{
+            0%{top: 160px;}
+            30%{top: 100px;} /*a porcenteagem é o tempo em que a animação vai levar pra acabar 100@ == fim
+            70%{top: 100px;} 
+            100%{top: 150px;}  
+          } */
+          #quadrado{
+            width: 30px;
+            height: 30px;
+            background-color: crimson;
+            position: relative;
+            top: 121px;
+            left: 470px;
+            animation: quadrado 0s infinite linear;
+          }
+
+         @keyframes quadrado{
+         0%{left: 480px;}
+         100%{left: -40px;}
+         } 
+         section{
+           margin-left: 400px;
+           margin-top: 50px;
+         }
+       
+        
+
+       </style>
+
+
+      
+
+      <script>
+   
+      function myFunction03(){
+       var value = 52
+        var elemento = document.getElementById('perso')
+        elemento.style.top =value+"px"
+
+       setTimeout(function(){
+        if(value==52){
+         value=100 
+         elemento.style.top =value+"px"       
+        }
+       },500)
+
+     }
+      </script>
+
+
+
+</head>
+<body>
+  
+    
+  
+   <section>
+    <button onclick="myFunction03()">Pular</button>
+
+    <div id="game">
+      <div id="perso" > <img src="imagens/img04.png" width="100px" height="100px"></div>
+      <div id="quadrado" ></div>
+      <div id="stage" ></div>
+   </div>
+</section> 
+
+   
+
+
+
+</body>
+
+</html>
