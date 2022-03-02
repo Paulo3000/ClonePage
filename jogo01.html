@@ -36,7 +36,7 @@
             position: relative;
             top: 100px;
             left: 450px;
-            animation: quadrado 0s infinite linear;
+            animation: quadrado 2s infinite linear;
           }
 
          @keyframes quadrado{
@@ -57,31 +57,40 @@
 
       <script>
    
-      function myFunction03(){
-       var value = 52
-        var elemento = document.getElementById('perso')
-        var quadrado = document.getElementById('quadrado')
-        elemento.style.top =value+"px"
 
-       setTimeout(function(){
-        if(value==52){
-         value=100 
-         elemento.style.top =value+"px"       
-        }
-       },500)
+//-------------------------------------------------crindo o segundo teste de colisao
 
-    //------------------------------------testando colizão
-     
+function myFunction03(){
+      var value = 30
+       var elemento = document.getElementById('perso')
+       var quadrado = document.getElementById('quadrado')
+       elemento.style.top =value+"px"
+
+  setTimeout(function(){
+       if(value==30){
+        value=100 
+        elemento.style.top =value+"px"       
+       }
+        
+        
+      },500)}
+
+
+     setInterval(function(){
+      var elemento = document.getElementById('perso')
+     var quadrado = document.getElementById('quadrado')
+     var dino =parseInt(window.getComputedStyle(elemento).getPropertyValue('top') )
      var quadradoPosition = parseInt(window.getComputedStyle(quadrado).getPropertyValue('left') )
-    var dino =parseInt(window.getComputedStyle(elemento).getPropertyValue('top') )
-
-     if(quadradoPosition<51 && dino <=100){
-       alert("colidiu")
-
+    
+     if(quadradoPosition < 40  && dino == 100){
+  
+       
+     alert("colidiu")
+     
      }
 
-
-     }
+     },1)
+     
     
       </script>
 
