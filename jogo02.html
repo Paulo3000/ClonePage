@@ -12,13 +12,14 @@
 </head>
 
 <style>
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .turma{
      width: 500px;
     height: 500px; 
-
-  
-  
+ 
 }
 
 
@@ -33,13 +34,40 @@
 <body>
 
    
-<img src="imagens/img10.png" usemap="#jogo7">
- 
-    <map name="jogo7">
-        <area alt="erro01" shape="re" href="#" coords="47,263,109,316">
-    </map>
+<!------------- sitema pra  colocar uma imagen sobre outra --> 
+<div style='position:relative; top:0px; left:0px;'>
+    <img src="imagens/img10.png " usemap="#jogo7" class="fundo">
 
+    
+    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 400px; left:16px" class="e1"> 
+    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 260px; left:36px" class="e2"> 
+    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 360px; left:396px" class="e3"> 
+    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 415px; left:321px" class="e4"> 
+    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 425px; left:390px" class="e5"> 
+    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 400px; left:370px" class="e6"> 
+    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 430px; left:175px" class="e7"> 
    
     
+    
+    </div>
+
+    
+
+   
+ 
+    <map name="jogo7">
+        <area alt="erro01" shape="rect" href="#"  coords="47,263,109,316">
+        <area alt="erro02" shape="rect" href="#" coords="27,29,49,463">
+        <area alt="erro03" shape="rect" href="#" coords="324,415,335,429">
+        <area alt="erro04" shape="rect" href="#" coords="414,342,444,380"> 
+        <area alt="erro05" shape="rect" href="#" coords="180,452,217,483">
+        <area alt="erro06" shape="rect" href="#" coords="373,401,411,436">
+        <area alt="erro07" shape="rect" href="#" coords="395,450,432,473">
+        
+    </map>
+
+  
+
+  
 </body>
 </html>
