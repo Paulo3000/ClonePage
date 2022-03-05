@@ -21,11 +21,28 @@
     height: 500px; 
  
 }
-
-
-/* --------------------------------------------pontos de colizão*/
-
-
+.e1{
+    visibility: hidden;
+}
+.e2{
+    visibility: hidden;
+}
+.e3{
+    visibility: hidden;
+}
+.e4{
+    visibility: hidden;
+}
+.e5{
+    visibility: hidden;
+}
+.e6{
+    visibility: hidden;
+}
+.e7{
+    visibility: hidden;
+   
+}
 
 </style>
 
@@ -35,37 +52,66 @@
 
    
 <!------------- sitema pra  colocar uma imagen sobre outra --> 
+                                                                                         
 <div style='position:relative; top:0px; left:0px;'>
     <img src="imagens/img10.png " usemap="#jogo7" class="fundo">
 
     
-    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 400px; left:16px" class="e1"> 
-    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 260px; left:36px" class="e2"> 
-    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 360px; left:396px" class="e3"> 
-    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 415px; left:321px" class="e4"> 
-    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 425px; left:390px" class="e5"> 
-    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 400px; left:370px" class="e6"> 
-    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 430px; left:175px" class="e7"> 
-   
-    
-    
+    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top:260px; left:36px " class="e1" id="ee1"> 
+    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top:410px; left:16px " class="e2" id="ee2"> 
+    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 360px; left:396px" class="e3" id="ee3"> 
+    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 415px; left:321px" class="e4" id="ee4"> 
+    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 425px; left:390px" class="e5" id="ee5"> 
+    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 400px; left:370px" class="e6" id="ee6"> 
+    <img src="imagens/img11.png" width="50px" height="50px" style="position: absolute; top: 430px; left:175px" class="e7" id="ee7"> 
     </div>
 
-    
-
-   
- 
-    <map name="jogo7">
-        <area alt="erro01" shape="rect" href="#"  coords="47,263,109,316">
-        <area alt="erro02" shape="rect" href="#" coords="27,29,49,463">
-        <area alt="erro03" shape="rect" href="#" coords="324,415,335,429">
-        <area alt="erro04" shape="rect" href="#" coords="414,342,444,380"> 
-        <area alt="erro05" shape="rect" href="#" coords="180,452,217,483">
-        <area alt="erro06" shape="rect" href="#" coords="373,401,411,436">
-        <area alt="erro07" shape="rect" href="#" coords="395,450,432,473">
+      <map name="jogo7">
+        <area alt="erro01" shape="rect" href="#" coords="47,263,109,316" onclick="image()"> 
+        <area alt="erro02" shape="rect" href="#" coords="27,29,49,463" onclick="image2()">
+        <area alt="erro03" shape="rect" href="#" coords="324,415,335,429" onclick="image3()">
+        <area alt="erro04" shape="rect" href="#" coords="414,342,444,380" onclick="image4()"> 
+        <area alt="erro05" shape="rect" href="#" coords="180,452,217,483" onclick="image5()">
+        <area alt="erro06" shape="rect" href="#" coords="373,401,411,436" onclick="image6()">
+        <area alt="erro07" shape="rect" href="#" coords="395,450,432,473" onclick="image7()"> 
         
     </map>
 
+<!-- ========================================================== -->
+<script>
+
+    function image(){
+    
+    var element = document.getElementById("ee1").style.visibility="visible";
+    }
+    function image2(){
+    
+    var element = document.getElementById("ee2").style.visibility="visible";
+    }
+    function image3(){
+    
+    var element = document.getElementById("ee3").style.visibility="visible";
+    }
+    function image4(){
+    
+    var element = document.getElementById("ee4").style.visibility="visible";
+    }
+    function image5(){
+    
+    var element = document.getElementById("ee5").style.visibility="visible";
+    }
+    function image6(){
+    
+    var element = document.getElementById("ee6").style.visibility="visible";
+    }
+    function image7(){
+    
+    var element = document.getElementById("ee7").style.visibility="visible";
+    }
+
+
+
+</script>
   
 
   
