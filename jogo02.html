@@ -76,40 +76,74 @@
         <area alt="erro07" shape="rect" href="#" coords="395,450,432,473" onclick="image7()"> 
         
     </map>
+    <br>
+    <h3 id="text01">Encontrado erro</h3>
 
 <!-- ========================================================== -->
 <script>
 
+   var num = 0
+
     function image(){
     
     var element = document.getElementById("ee1").style.visibility="visible";
+    num++
+    change()
+    congratulation()
     }
     function image2(){
     
     var element = document.getElementById("ee2").style.visibility="visible";
+    num++
+    change()
+    congratulation()
     }
     function image3(){
     
-    var element = document.getElementById("ee3").style.visibility="visible";
+    var element = document.getElementById("ee4").style.visibility="visible";
+    num++
+    change()
+    congratulation()
     }
     function image4(){
     
-    var element = document.getElementById("ee4").style.visibility="visible";
+    var element = document.getElementById("ee3").style.visibility="visible";
+    num++
+    change()
+    congratulation()
     }
     function image5(){
     
-    var element = document.getElementById("ee5").style.visibility="visible";
+    var element = document.getElementById("ee7").style.visibility="visible";
+    num++
+    change()
+    congratulation()
     }
     function image6(){
     
     var element = document.getElementById("ee6").style.visibility="visible";
+    num++
+    change()
+    congratulation()
     }
     function image7(){
     
-    var element = document.getElementById("ee7").style.visibility="visible";
+    var element = document.getElementById("ee5").style.visibility="visible";
+    num++
+    change()
+    congratulation()
     }
 
+ function change(){
+document.getElementById("text01").innerHTML ="Total de Erros encontrados "+num
 
+ 
+ }
+ function congratulation(){
+     if(num==7){
+        document.getElementById("text01").innerHTML ="Parabéns você encontrou todos os erros"
+     }
+ }
 
 </script>
   
